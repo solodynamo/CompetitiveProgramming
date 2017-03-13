@@ -21,6 +21,7 @@ inline int inp()
     while(p>47 && p<58){ noRead = (noRead << 3) + (noRead << 1) + (p - '0');p=getc(stdin);}
     return noRead;
 };
+
 int main()
 {
     int t=inp(),n,k,i,j,co,dep;
