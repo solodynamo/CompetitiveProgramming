@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<algorithm> 
+#include<algorithm>
 using namespace std;
 int main()
 {
@@ -24,4 +24,3 @@ int main()
     }
     return 0;
 }
-s
