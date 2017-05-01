@@ -1,29 +1,26 @@
 #include<stdio.h>
 #include<algorithm>
-
 using namespace std;
-
-int main() {
-int tc;
-
-scanf("%d\n", &tc);
-while(tc--) {
-        int it;
-    scanf("%d",&it);
-    int men[it], women[it];
-for(int i = 0 ; i <it ; i++) {
-    scanf("%d", &men[i]);
-}
-for(int j = 0 ; j <it ; j++) {
-    scanf("%d", &women[j]);
-}
-sort(men, men+it);
-sort(women, women+it);
-int sum = 0;
-for(int k = 0 ; k < it; k++) {
-    sum+= men[k]*women[k];
-}
-printf("%d\n", sum);
-}
-return 0;
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int i,ppl;
+        scanf("%d",&ppl);
+        int men[ppl],women[ppl];
+        for(i=0;i<ppl;i++)
+            scanf("%d",&men[i]);
+        for(i=0;i<ppl;i++)
+            scanf("%d",&women[i]);
+        // idea to sort is that multiply max with max value so that hotness is max
+        sort(men,men+ppl);
+        sort(women,women+ppl);
+        long long ans=0;
+        for(i=0;i<ppl;i++)
+            ans+=men[i]*women[i];
+        printf("%d\n",ans);
+    }
+    return 0;
 }
