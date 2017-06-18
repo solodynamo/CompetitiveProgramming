@@ -8,7 +8,7 @@ using namespace std;
 struct Node {
   vector <int> adj;
 }
-
+=
 Node node[MAX];
 bool is_visited[MAX];
 
